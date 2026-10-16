@@ -127,10 +127,10 @@ rm -rf /tmp/luci-indexcache >/dev/null 2>&1 &
 rm -rf /tmp/luci-modulecache/ >/dev/null 2>&1 &
 
 
-/etc/init.d/qca-nss-drv enable >/dev/null 2>&1 &
-sleep 5
-/etc/init.d/qca-nss-drv start >/dev/null 2>&1 &
-sleep 50 && /etc/init.d/pcie_mhi reload
+# /etc/init.d/qca-nss-drv enable >/dev/null 2>&1 &
+# sleep 5
+# /etc/init.d/qca-nss-drv start >/dev/null 2>&1 &
+sleep 30 && /etc/init.d/pcie_mhi reload
 
 /etc/init.d/network reload
 /etc/init.d/firewall reload
@@ -152,7 +152,7 @@ fi
 
 echo "" >> /var/run/quectel/dial_log 2>&1 &
 if [ -f /var/run/quectel/dial_log ]; then
-	sleep 50
+	sleep 10
 	chmod 664 /var/run/quectel/dial_log >/dev/null 2>&1 &
 fi
 
