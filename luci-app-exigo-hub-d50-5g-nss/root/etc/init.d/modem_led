@@ -1,0 +1,41 @@
+#!/bin/sh /etc/rc.common
+#
+# Copyright 2026 Rafał Wabik (IceG) - From eko.one.pl forum
+# Licensed to the GNU General Public License v3.0.
+#
+
+START=99
+STOP=10
+
+USE_PROCD=1
+PROG=/usr/share/xunison/led_4G5G.sh
+PIDFILE=/var/run/modem_led_4G5G.pid
+
+start_service() {
+    procd_open_instance
+
+    procd_set_param command /bin/sh $PROG
+    
+    procd_set_param stdout 0
+    procd_set_param stderr 0
+    
+    # threshold=3600 (1h), timeout=5s, retry=5
+    procd_set_param respawn 3600 5 5
+    
+    procd_set_param nice 10
+    
+    procd_close_instance
+}
+
+stop_service() {
+    echo 0 > /sys/class/leds/green:4g/brightness 2>/dev/null
+    echo 0 > /sys/class/leds/green:5g/brightness 2>/dev/null
+    echo 0 > /sys/class/leds/red:5g/brightness 2>/dev/null
+    
+    rm -f $PIDFILE 2>/dev/null
+}
+
+reload_service() {
+    stop
+    start
+}

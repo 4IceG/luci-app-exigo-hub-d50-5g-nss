@@ -1,0 +1,43 @@
+{
+  "luci-app-exigo-hub-d50-5g-nss": {
+    "description": "Grant access to Xunison Exigo Hub D50 5G app",
+    "read": {
+      "cgi-io": [ "exec" ],
+      "file": {
+        "/sys/class/hwmon/*": [ "read" ],
+        "/sys/class/thermal/*": [ "read" ],
+        "/proc/stat": [ "read" ],
+        "/sys/devices/system/cpu/*": [ "read" ],
+        "/sys/kernel/debug/qca-nss-drv/stats/*": [ "read" ],
+        "/sys/kernel/debug/ecm/ecm_nss_ipv4/accelerated_count": [ "read" ],
+        "/sys/kernel/debug/ecm/ecm_nss_ipv6/accelerated_count": [ "read" ]
+      },
+      "ubus": {
+        "file": [ "read", "stat" ]
+      }
+    },
+    "write": {
+      "uci": [ "system", "modemdata", "defmodems", "atinout", "sms_tool_js", "easyconfig_transfer", "watchdog", "qfirehose" ],
+      "file": {
+        "/sys/class/leds/*/brightness": [ "write" ],
+        "/sys/class/leds/*/trigger": [ "write" ],
+        "/sys/class/leds/*/delay_on": [ "write" ],
+        "/sys/class/leds/*/delay_off": [ "write" ],
+        "/var/run/modem_led_4G5G.pid": [ "write" ]
+      }
+    },
+    "exec": {
+      "/usr/share/xunison/led_4G5G.sh": [ "*" ],
+      "/usr/share/xunison/sensors.sh": [ "*" ],
+      "/etc/init.d/led": [ "*" ],
+      "/etc/init.d/modem_led": [ "*" ],
+      "/usr/bin/sms_tool": [ "*" ],
+      "/usr/bin/mhz": [ "*" ],
+      "/bin/rm": [ "*" ],
+      "/bin/cp": [ "*" ],
+      "/bin/mv": [ "*" ],
+      "/bin/chmod": [ "*" ],
+      "/sbin/ifstatus": [ "*" ]
+    }
+  }
+}

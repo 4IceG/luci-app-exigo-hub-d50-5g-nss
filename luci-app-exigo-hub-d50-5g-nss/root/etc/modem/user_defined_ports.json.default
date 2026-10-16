@@ -1,0 +1,30 @@
+[
+  {
+    "device": "wan",
+    "label": "WAN",
+    "role": "wan",
+    "originalLabel": "wan",
+    "description": ""
+  },
+  {
+    "device": "lan1",
+    "label": "LAN1",
+    "role": "lan",
+    "originalLabel": "lan1",
+    "description": ""
+  },
+  {
+    "device": "lan2",
+    "label": "LAN2",
+    "role": "lan",
+    "originalLabel": "lan2",
+    "description": ""
+  },
+  {
+    "device": "lan3",
+    "label": "LAN3",
+    "role": "lan",
+    "originalLabel": "lan3",
+    "description": ""
+  }
+]

@@ -1,0 +1,207 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-exigo-hub-d50-5g\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Rafał Wabik (IceG)\n"
+"Language: pl\n"
+
+msgid "Sensors"
+msgstr "Sensory"
+
+msgid "CPU"
+msgstr "Procesor"
+
+msgid "Mainboard"
+msgstr "Płyta główna"
+
+msgid "Ethernet"
+msgstr "Ethernet"
+
+msgid "Network Coprocessor"
+msgstr "Procesor sieciowy"
+
+msgid "Wi-Fi 2.4GHz"
+msgstr "Wi-Fi 2.4GHz"
+
+msgid "Wi-Fi 5GHz"
+msgstr "Wi-Fi 5GHz"
+
+msgid "Quectel Cellular"
+msgstr "Komórkowy Quectel"
+
+msgid "NSS Core Load"
+msgstr "Obciążenie rdzenia NSS"
+
+msgid "min.:"
+msgstr "min.:"
+
+msgid "avg.:"
+msgstr "śred.:"
+
+msgid "max.:"
+msgstr "maks.:"
+
+msgid "NSS Offload"
+msgstr "Akceleracja sprzętowa NSS"
+
+msgid "ECM accelerated connections"
+msgstr "Przyspieszone połączenia (ECM)"
+
+msgid "NSS Offload"
+msgstr "Akceleracja sprzętowa NSS"
+
+msgid "Offload active"
+msgstr "Akceleracja aktywna"
+
+msgid "Firmware armed but heartbeat silent — check the system log; a reboot returns to the host stack"
+msgstr "Oprogramowanie sprzętowe jest aktywne, ale brak sygnału heartbeat - sprawdź dziennik systemowy; restart przywraca stos hosta"
+
+msgid "Host stack (NSS plane not armed)"
+msgstr "Stos hosta (płaszczyzna NSS nieaktywna)"
+
+msgid "loaded"
+msgstr "załadowany"
+
+msgid "not loaded"
+msgstr "niezaładowany"
+
+msgid "NSS offload active (wifili, 802.11s mesh offloaded)"
+msgstr "Akceleracja sprzętowa NSS aktywna (wifili, mesh 802.11s przyspieszany sprzętowo)"
+
+msgid "NSS offload active (wifili)"
+msgstr "Akceleracja sprzętowa NSS aktywna (wifili)"
+
+msgid "host mode (mesh configured; firmware supports mesh offload)"
+msgstr "tryb hosta (mesh skonfigurowany; firmware obsługuje akcelerację sprzętową mesh)"
+
+msgid "host mode (mesh configured; mesh offload needs the 11.4 NSS firmware)"
+msgstr "tryb hosta (mesh skonfigurowany; akceleracja sprzętowa mesh wymaga firmware NSS 11.4)"
+
+msgid "host mode"
+msgstr "tryb hosta"
+
+msgid "ath11k not loaded"
+msgstr "ath11k niezaładowany"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Started"
+msgstr "Uruchomiony"
+
+msgid "TX offloaded"
+msgstr "TX przyspieszony sprzętowo"
+
+msgid "TX via host"
+msgstr "TX przez hosta"
+
+msgid "RX offloaded"
+msgstr "RX przyspieszony sprzętowo"
+
+msgid "RX to host"
+msgstr "RX do hosta"
+
+msgid "yes"
+msgstr "tak"
+
+msgid "no"
+msgstr "nie"
+
+msgid "Node"
+msgstr "Węzeł"
+
+msgid "Switch ports"
+msgstr "Porty przełącznika"
+
+msgid "Link"
+msgstr "Łącze"
+
+msgid "up"
+msgstr "aktywne"
+
+msgid "down"
+msgstr "nieaktywne"
+
+msgid "TX packets"
+msgstr "Pakiety TX"
+
+msgid "RX packets"
+msgstr "Pakiety RX"
+
+msgid "Switch ports and bridges on the firmware (DSA)"
+msgstr "Porty przełącznika i mostki w firmware (DSA)"
+
+msgid "Each standalone switch port reaches the firmware as its own VLAN node on the GMAC above. A bridge has one node that all its switch ports share, and a VLAN-aware bridge has one for each of its VLANs."
+msgstr "Każdy samodzielny port przełącznika trafia do firmware jako osobny węzeł VLAN na powyższym GMAC. Mostek ma jeden węzeł współdzielony przez wszystkie jego porty przełącznika, a mostek obsługujący VLAN-y ma po jednym dla każdego ze swoich VLAN-ów."
+
+msgid "The offloaded share is part of the GMAC's figures above; the totals here are each port's own switch counters, all its VLANs together."
+msgstr "Udział ruchu przyspieszanego sprzętowo jest częścią wartości GMAC podanych wyżej, sumy tutaj to własne liczniki przełącznika każdego portu, ze wszystkimi jego VLAN-ami łącznie."
+
+msgid "Firmware"
+msgstr "Wersja oprogramowania"
+
+msgid "Heartbeat"
+msgstr "Heartbeat"
+
+msgid "pkts/s (NSS→host)"
+msgstr "pkt/s (NSS→host)"
+
+msgid "NSS core load"
+msgstr "Obciążenie rdzenia NSS"
+
+msgid "ECM accelerated connections"
+msgstr "Przyspieszone połączenia (ECM)"
+
+msgid "multicast"
+msgstr "multicast"
+
+msgid "ECM not loaded"
+msgstr "ECM niezaładowany"
+
+msgid "Bridge offload (bridge-mgr)"
+msgstr "Akceleracja sprzętowa mostka (bridge-mgr)"
+
+msgid "PPPoE manager"
+msgstr "Menedżer PPPoE"
+
+msgid "Wi-Fi data path"
+msgstr "Ścieżka danych Wi-Fi"
+
+msgid "SQM shaper"
+msgstr "Shaper SQM"
+
+msgid "nsstbl on"
+msgstr "nsstbl na"
+
+msgid "a lane on the switch conduit"
+msgstr "pas w kanale przełącznika"
+
+msgid "upload IGS:"
+msgstr "IGS wysyłania:"
+
+msgid "no NSS shaper on"
+msgstr "brak shapera NSS na"
+
+msgid "no NSS shaper"
+msgstr "brak shapera NSS"
+
+msgid "Fast lane"
+msgstr "Szybki pas"
+
+msgid "egress"
+msgstr "wyjściowy"
+
+msgid "ingress"
+msgstr "wejściowy"
+
+msgid "marking rules"
+msgstr "reguły oznaczania"
+
+msgid "Firmware-attached ports"
+msgstr "Porty podłączone do firmware"
+
+msgid "No ports attached — host stack"
+msgstr "Brak podłączonych portów - stos hosta"
+
+msgid "Offloaded packets are forwarded by the firmware and never reach the host. \"via host\" / \"to host\" is the host↔firmware exception path — what was not offloaded — so low numbers there mean offload is working. Broadcast and multicast discovery, connection setup, short-lived flows and traffic addressed to the router itself always take that path: a flow is only offloaded once it is established, so a quiet port that carries little else shows a low offloaded share. Port totals are on Status → Overview."
+msgstr "Pakiety przyspieszane sprzętowo są przekazywane przez firmware i nigdy nie trafiają do hosta. „przez hosta” / „do hosta” to ścieżka wyjątków host↔firmware, czyli ruch, który nie został przyspieszony sprzętowo, więc niskie wartości oznaczają, że akceleracja działa. Rozgłaszanie i wykrywanie multicast, nawiązywanie połączeń, krótkotrwałe przepływy oraz ruch adresowany do samego routera zawsze idą tą ścieżką: przepływ jest przyspieszany sprzętowo dopiero po nawiązaniu, więc cichy port, który przenosi niewiele innego ruchu, pokazuje niski udział ruchu przyspieszanego. Sumy portów znajdziesz w Status → Przegląd."
