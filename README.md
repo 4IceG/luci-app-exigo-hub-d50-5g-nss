@@ -6,5 +6,4 @@ A dedicated LuCI JS package for the Xunison Exigo Hub D50 5G. Package includes s
 > #### The package preconfigures the router / Pakiet wstępnie ustawia router
 - Creates an interface associated with the modem / Tworzy interfejs przypisany do modemu
 - It pre-configures my packages / Wstępnie konfiguruje moje pakiety
-- Controls 4G/5G LEDs / Steruje diodami led 4G/5G
-- Show statistics for NSS and add a translation for “luci-app-nss” / Pokazuje statystyki dla NSS oraz dodaje tłumaczenie dla "luci-app-nss"
+- Show statistics for NSS / Pokazuje statystyki dla NSS
